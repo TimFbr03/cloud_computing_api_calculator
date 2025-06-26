@@ -16,7 +16,7 @@ def hello():
 def add():
     try:
         a = float(request.args.get('a'))
-        b = float(request.args.get('b'))
+        b = float(request.args.get('b')) 
         result = add_numbers(a, b)
         return jsonify({
             'a': a,
