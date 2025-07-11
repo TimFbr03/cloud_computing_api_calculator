@@ -30,7 +30,7 @@ def add():
         return jsonify({'error': 'Bitte gueltige Zahlen angeben, z.B. /add?a=3&b=4'}), 400
     
 @app.route('/subtract', methods=['GET'])
-def add():
+def sub():
     try:
         a = float(request.args.get('a'))
         b = float(request.args.get('b')) 
